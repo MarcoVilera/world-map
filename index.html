@@ -9,9 +9,10 @@
     <script src="script.js"></script>
   </head>
   <body>
-    <div id="main">
-      <div id ="header">
-        <select name="Paises" id="countrySelector">
+    <div class="main">
+      <h1>World Map</h1>
+      <div class="item" id="header">
+        <!--<select name="Paises" id="countrySelector">
           <option value="">Alemania</option>
           <option value="">Argentina</option>
           <option value="">Australia</option>
@@ -27,17 +28,53 @@
           <option value="">Reino Unido</option>
           <option value="">Suiza</option>
           <option value="xd" selected>Venezuela</option>
-        </select>
+        </select>-->
+        <input type="text" list="paises" />
+        <datalist id="paises">
+          <option value="Alemania">Alemania</option>
+          <option value="Argentina">Argentina</option>
+          <option value="Canadá">Canadá</option>
+          <option value="Chile">Chile</option>
+          <option value="Corea del Sur">Corea del Sur</option>
+          <option value="Dinamarca">Dinamarca</option>
+          <option value="Estados Unidos">Estados Unidos</option>
+          <option value="Filipinas">Filipinas</option>
+          <option value="Francia">Francia</option>
+          <option value="Italia">Italia</option>
+          <option value="Japón">Japón</option>
+          <option value="Reino Unido">Reino Unido</option>
+          <option value="Suiza">Suiza</option>
+          <option value="Venezuela">Venezuela</option>
+        </datalist>
+        <!--TODO Implementar funcionalidad-->
+        <button id="search" type="button">
+          <img
+            src="assets/img/search.png"
+            alt="buscar"
+            width="12px"
+            height="12px"
+          />
+        </button>
+
+        <!--TODO Implementar funcionalidad-->
+        <button id="reset" type="button">
+          <img
+            src="assets/img/reset.png"
+            alt="reiniciar"
+            width="12px"
+            height="12px"
+          />
+        </button>
       </div>
-      <!--<div id="countryInfo">
-          <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-              fugit cumque explicabo aperiam atque corporis sed necessitatibus, ut
-              consequuntur minus quas at tempore a fugiat, quae minima est dolore
-              omnis.
-            </p>
-        </div>-->
-        <div id="world"></div>
+      <div class="item" id="world"></div>
+      <div class="item" id="countryInfo">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+          fugit cumque explicabo aperiam atque corporis sed necessitatibus, ut
+          consequuntur minus quas at tempore a fugiat, quae minima est dolore
+          omnis.
+        </p>
+      </div>
     </div>
   </body>
 </html>
