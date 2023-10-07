@@ -6,75 +6,55 @@
     <title>World Map</title>
     <link rel="shortcut icon" href="assets/img/favicon.ico" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="script.js"></script>
   </head>
   <body>
-    <div class="main">
-      <h1>World Map</h1>
-      <div class="item" id="header">
-        <!--<select name="Paises" id="countrySelector">
-          <option value="">Alemania</option>
-          <option value="">Argentina</option>
-          <option value="">Australia</option>
-          <option value="">Canadá</option>
-          <option value="">Chile</option>
-          <option value="">Corea del Sur</option>
-          <option value="">Dinamarca</option>
-          <option value="">Estados Unidos</option>
-          <option value="">Filipinas</option>
-          <option value="">Francia</option>
-          <option value="">Italia</option>
-          <option value="">Japón</option>
-          <option value="">Reino Unido</option>
-          <option value="">Suiza</option>
-          <option value="xd" selected>Venezuela</option>
-        </select>-->
-        <input type="text" list="paises" />
-        <datalist id="paises">
-          <option value="Alemania">Alemania</option>
-          <option value="Argentina">Argentina</option>
-          <option value="Canadá">Canadá</option>
-          <option value="Chile">Chile</option>
-          <option value="Corea del Sur">Corea del Sur</option>
-          <option value="Dinamarca">Dinamarca</option>
-          <option value="Estados Unidos">Estados Unidos</option>
-          <option value="Filipinas">Filipinas</option>
-          <option value="Francia">Francia</option>
-          <option value="Italia">Italia</option>
-          <option value="Japón">Japón</option>
-          <option value="Reino Unido">Reino Unido</option>
-          <option value="Suiza">Suiza</option>
-          <option value="Venezuela">Venezuela</option>
+    <div class="wrapper">
+      <div class="header">
+        <h1>World Map</h1>
+        <input placeholder="Introduce un país" list="countrys" id="countryInput" />
+        <datalist id="countrys">
+          <option value="Alemania"></option>
+          <option value="Argentina"></option>
+          <option value="Australia"></option>
+          <option value="Corea del Sur"></option>
+          <option value="Egipto"></option>
+          <option value="Estados Unidos"></option>
+          <option value="Japón"></option>
+          <option value="Nigeria"></option>
+          <option value="Nueva Zelanda"></option>
+          <option value="Reino Unido"></option>
+          <option value="Venezuela"></option>
         </datalist>
-        <!--TODO Implementar funcionalidad-->
-        <button id="search" type="button">
-          <img
-            src="assets/img/search.png"
-            alt="buscar"
-            width="12px"
-            height="12px"
-          />
+        <button type="button" id="search">
+          <img src="assets/img/search.png" width="12px" height="12px" />
         </button>
 
-        <!--TODO Implementar funcionalidad-->
-        <button id="reset" type="button">
-          <img
-            src="assets/img/reset.png"
-            alt="reiniciar"
-            width="12px"
-            height="12px"
-          />
+        <button type="button" id="reset">
+          <img src="assets/img/reset.png" width="12px" height="12px" />
         </button>
       </div>
-      <div class="item" id="world"></div>
-      <div class="item" id="countryInfo">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-          fugit cumque explicabo aperiam atque corporis sed necessitatibus, ut
-          consequuntur minus quas at tempore a fugiat, quae minima est dolore
-          omnis.
-        </p>
+      <div class="main">
+        <div class="container">
+          <div class="dot">
+            <img src="assets/img/mappin.png" id="mappin" width="15px" height="20px" />
+            <div class="world"></div>
+          </div>
+        </div>
+        <!-- informacion del pais -->
+        <div class="country-info">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernaturrepudiandae dolorum
+          minus dignissimos laboriosam temporibus quaealiquid quis odit magni error, harum vero
+          suscipit sunt nobis ad? Dolorum, quidem? Vero! Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Dolorum accusamus fugiat enim architecto eveniet deserunt dolores optio
+          officiis! Excepturi neque esse modi a eius beatae qui quam ipsam aliquam non. Lorem ipsum
+          dolor sit amet, consectetur adipisicing elit. Consequatur cumque modi ratione facilis
+          accusamus tempora velit labore eligendi blanditiis deserunt rem voluptas nostrum quia in,
+          atque deleniti quos autem distinctio! Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit. Dignissimos quaerat voluptate, adipisci asperiores eveniet, tempore earum neque
+          eaque non veritatis at ullam nulla repellat minus. Doloribus delectus nihil suscipit id.
+        </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
