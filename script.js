@@ -25,7 +25,7 @@ function getCountry() {
         if (country === i.value)
             console.log("pais valido")
         
-    country.toLowerCase().replace(/\s+/g, "")
+    country=country.toLowerCase().replace(/\s+/g, "")
     console.log(country.toLowerCase())
     const move = [
         { backgroundPosition: "300px 15px" },
