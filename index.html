@@ -1,60 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>World Map</title>
-    <link rel="shortcut icon" href="assets/img/favicon.ico" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <div class="header">
-        <h1>World Map</h1>
-        <input placeholder="Introduce un país" list="countrys" id="countryInput" onkeydown="return inputChecker(event);"/>
-        <datalist id="countrys">
-          <option value="Alemania"></option>
-          <option value="Argentina"></option>
-          <option value="Australia"></option>
-          <option value="Corea del Sur"></option>
-          <option value="Egipto"></option>
-          <option value="Estados Unidos"></option>
-          <option value="Japón"></option>
-          <option value="Nigeria"></option>
-          <option value="Nueva Zelanda"></option>
-          <option value="Reino Unido"></option>
-          <option value="Venezuela"></option>
-        </datalist>
-        <button type="button" id="search" onclick="getCountry()">
-          <img src="assets/img/search.png" width="12px" height="12px" />
-        </button>
-
-        <button type="button" id="reset">
-          <img src="assets/img/reset.png" width="12px" height="12px" />
-        </button>
-      </div>
-      <div class="main">
-        <div class="container">
-          <div class="dot">
-            <img src="assets/img/mappin.png" id="mappin" width="15px" height="20px" />
-            <div class="world"></div>
-          </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>World Map</title>
+        <link rel="shortcut icon" href="assets/img/favicon.ico" />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="header">
+                <h1>World Map</h1>
+                <input
+                    placeholder="Introduce un país"
+                    list="countrys"
+                    id="countryInput"
+                    onkeydown="return inputChecker(event);" />
+                <datalist id="countrys">
+                    <option value="Alemania"></option>
+                    <option value="Argentina"></option>
+                    <option value="Australia"></option>
+                    <option value="Corea del Sur"></option>
+                    <option value="Egipto"></option>
+                    <option value="Estados Unidos"></option>
+                    <option value="Japón"></option>
+                    <option value="Nigeria"></option>
+                    <option value="Nueva Zelanda"></option>
+                    <option value="Reino Unido"></option>
+                    <option value="Venezuela"></option>
+                </datalist>
+                <button type="button" id="search" onclick="getCountry()">
+                    <img src="assets/img/search.png" width="12px" height="12px" />
+                </button>
+                <!--<button type="button" id="reset">
+                    <img src="assets/img/reset.png" width="12px" height="12px" />
+                </button>-->
+            </div>
+            <div class="main">
+                <div class="container">
+                    <div class="dot">
+                        <img src="assets/img/mappin.png" id="mappin" width="15px" height="20px" />
+                        <div class="world"></div>
+                    </div>
+                </div>
+                <div id="country-info">
+                    <div id="country-img"><img src="assets/img/FlagAustralia.png" alt=""></div>
+                    <div id="country-content"></div>
+                </div>
+            </div>
         </div>
-        <!-- informacion del pais -->
-        <div class="country-info">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernaturrepudiandae dolorum
-          minus dignissimos laboriosam temporibus quaealiquid quis odit magni error, harum vero
-          suscipit sunt nobis ad? Dolorum, quidem? Vero! Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Dolorum accusamus fugiat enim architecto eveniet deserunt dolores optio
-          officiis! Excepturi neque esse modi a eius beatae qui quam ipsam aliquam non. Lorem ipsum
-          dolor sit amet, consectetur adipisicing elit. Consequatur cumque modi ratione facilis
-          accusamus tempora velit labore eligendi blanditiis deserunt rem voluptas nostrum quia in,
-          atque deleniti quos autem distinctio! Lorem ipsum dolor sit, amet consectetur adipisicing
-          elit. Dignissimos quaerat voluptate, adipisci asperiores eveniet, tempore earum neque
-          eaque non veritatis at ullam nulla repellat minus. Doloribus delectus nihil suscipit id.
-        </div>
-      </div>
-    </div>
-    <script src="script.js"></script>
-  </body>
+        <script src="script.js"></script>
+    </body>
 </html>
