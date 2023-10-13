@@ -11,7 +11,7 @@
     <div class="wrapper">
       <div class="header">
         <h1>World Map</h1>
-        <input placeholder="Introduce un país" list="countrys" id="countryInput" />
+        <input placeholder="Introduce un país" list="countrys" id="countryInput" onkeydown="return inputChecker(event);"/>
         <datalist id="countrys">
           <option value="Alemania"></option>
           <option value="Argentina"></option>
