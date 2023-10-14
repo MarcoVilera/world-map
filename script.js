@@ -10,7 +10,6 @@ function getCountry() {
     let countryInput = document.getElementById("countryInput")
     let country = countryInput.value.trim().toLowerCase()
     countryInput.readOnly = true
-
     const VALIDCOUNTRYS = document.getElementById("countrys")
     let divData = []
     let continentX = 0
